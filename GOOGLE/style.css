@@ -1,0 +1,179 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/*! HEADER */
+
+header{
+    padding: 1rem;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 13px;
+}
+
+header nav{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+nav a{
+    text-decoration: none;
+    color: black;
+}
+
+nav button{
+    padding: 8px 20px;
+    background-color: #4285F4;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+nav button:hover{
+    background-color: #2970e2;
+}
+nav img{
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 100%;
+}
+nav img:hover{
+    border: 1px solid rgba(0, 0, 0, 0.12);
+}
+.head-nav:hover{
+    border-bottom: 1px solid black;
+}
+/*! MAİN */
+
+.main-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 500px;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.logo{
+    height:92px;
+    width: 272px;
+}
+.text-input{
+    position: relative;
+}
+.text-input input{
+    width: 600px;
+    height: 50px;
+    border-radius: 25px;
+    outline: none;
+    border: 1px solid rgba(0, 0, 0, 0.117);
+    padding: 1rem 3rem;
+}
+
+.text-input input:hover{
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.11);
+}
+
+.main-container i{
+    position: absolute;
+    top: 17px;
+    left: 20px;
+    opacity: 0.3;
+    font-size: 0.9rem;
+}
+
+.ikon-3{
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    width: 40px;
+}
+
+.ikon-2{
+    position: absolute;
+    top: 8px;
+    right: 60px;
+    width: 26px;
+}
+
+.ikon-1{
+    position: absolute;
+    top: 10px;
+    right: 95px;
+    width: 35px;
+}
+
+.search-input{
+    margin-top: 2rem;
+    text-align: center;
+}
+.search-input input{
+    font-size: 14px;
+    background-color: #F8F9FA;
+    border: none;
+    outline: none;
+    height: 2.5rem;
+    border-radius: 5px;
+}
+.search-input input[id=kendim-ara]{
+    width: 220px;
+}
+.search-input input[id=google-ara]{
+    width: 100px;
+    margin-right: 12px;
+}
+
+.search-input input:hover{
+    border: 1px solid rgba(0, 0, 0, 0.173);
+    box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.094);
+}
+
+/*! FOOTER */
+
+.footer-container{
+    position: absolute;
+    bottom: 0;
+    width: 100vw;
+    background-color: #F2F2F2;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    font-size: 15px;
+}
+
+.footer-nav{
+    padding: 1rem 1.6rem;    
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex: 1;
+}
+
+.nav-1 a{
+    margin-left: 1rem;
+}
+
+.nav-2 a{
+    margin-right: 10rem;
+}
+
+.nav-3 a{
+    margin-left: 1rem;
+}
+
+.navi a{
+    text-decoration: none;
+    color: black;
+    flex: 1;
+}
+
+
+.navi a:hover{
+    border-bottom: 1px solid black;
+}
