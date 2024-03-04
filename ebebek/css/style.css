@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+:root {
+    --primary-color : #008ACE;
+}
+/*! ---------------------------- */
+/*!            HEADER            */
+/*! ---------------------------- */
+
+header {
+    border: 1px solid red;
+}
+
+.logo{
+    width: 20%;
+    cursor: pointer;
+}
+
+.header__input{
+    position: relative;
+}
+
+.header__input input{
+    border: none;
+    background-color: #EBF6FB;
+    padding: 14.5px 0 14.5px 5rem;
+}
+.header__input input::placeholder{
+    font-size: 12px;
+}
+
+.header__input img{
+    position: absolute;
+    top: 30%;
+    left: 35px;
+    width: 40px;
+    height: 50%;
+}
+
+.heart-icon{
+    width: 50px;
+    border-color: #C4DFF2 !important;
+}
+.heart-icon:hover{
+    background-color:#EBF6FB ;
+    cursor: pointer;
+    border: none !important;
+}
+
+.heart-icon i{
+    font-size: 1.5rem;
+    color: var(--primary-color);
+}
+
+.giris-icon{
+    border-color: #C4DFF2 !important;
+    font-size: 12px;
+    padding: 0 2rem;
+    color: var(--primary-color);
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.sepet-icon{
+    font-size: 12px;
+    padding: 0 1.5rem;
+    color: var(--primary-color);
+    background-color: #EBF6FB;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.sepet-icon:hover{
+    background-color: #008ACE;
+    color: white;
+    cursor: pointer;
+}
