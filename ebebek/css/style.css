@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -7,19 +10,23 @@
 }
 :root {
     --primary-color : #008ACE;
+    --secondary-color: #F18E00;
 }
 /*! ---------------------------- */
 /*!            HEADER            */
 /*! ---------------------------- */
 
-header {
-    border: 1px solid red;
-}
+.header-slayt{
+    background-color: #0092DB;
+    font-family: "Quicksand", sans-serif;
+    font-size: 18px;
 
+}
 .logo{
-    width: 20%;
+    width: 12%;
     cursor: pointer;
 }
+
 
 .header__input{
     position: relative;
@@ -78,5 +85,204 @@ header {
 .sepet-icon:hover{
     background-color: #008ACE;
     color: white;
+    cursor: pointer;
+}
+.navbar{
+    font-family: "Quicksand", sans-serif;
+    font-size: 1.1rem;
+    font-weight: 500;
+
+}
+.primary-color{
+    color: var(--primary-color) !important;
+}
+
+.secondary-color{
+    color: var(--secondary-color) !important;
+
+}
+.header-2{
+    padding: 0 4.5rem;
+}
+.siparis-kontrol{
+    color: #6D6D6D;
+    font-size: 12px;
+    font-family: "Quicksand", sans-serif;
+    white-space: nowrap;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.siparis-kontrol p{
+    cursor: pointer;
+    margin-right: 2rem;
+}
+
+
+.slideshow-container {
+    background-color: #0093DA;
+    /* border: 1px solid red; */
+    position: relative;
+    width: 100%;
+    padding: 0 0 7rem;
+}
+
+.hidden {
+    display: none;
+}
+
+.prev, .next {
+    position: absolute;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 2rem;
+    color: var(--secondary-color);
+    bottom: 0;
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.prev {
+    left: 30px;
+}
+
+.next {
+    right: 30px;
+}
+.slide img{
+    cursor: pointer;
+}
+.slide-small{
+    position: absolute;
+    bottom: 0;
+    left: 10%;
+    display: flex;
+    gap: 10px;
+}
+
+.small-images{
+    width: 75%;
+    overflow: hidden;
+    position: absolute;
+    bottom: 20px;
+    left: 12%;
+}
+
+.small-images img{
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.slide-section{
+    /* border: 1px solid red; */
+    height: 425px;
+    width: 84%;
+}
+
+.slide-section img{
+    width: 70rem !important;
+    height: 100%;
+    margin-left: 2rem;
+}
+
+.slide_nav p{
+    font-size: 13.5px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.active{
+    background-color:#FEF6EB;
+    color: var(--secondary-color);
+    padding: 1rem;
+    border-radius: 24px;
+}
+.sectiklerımız, .super_fıyat{
+    width: 80%;
+}
+.title{
+    background-color: #FEF6EB;
+}
+.card{
+    color: #7D7D7D;
+    border: 1px solid rgba(215, 202, 202, 0.542) ;
+    border-radius: 15px;
+    position: relative;
+}
+
+.card:hover{
+    border: 2px solid var(--secondary-color);
+    cursor: pointer;
+}
+.card-title{
+    font-size: 12px !important;
+    
+    font-weight: 600 !important;
+}
+.card .btn{
+    background-color: #FEF6EB;
+    color: var(--secondary-color);
+    font-size: 14px;
+    padding: 13px 0;
+}
+
+.green{
+    color: #00A364 !important;
+}
+
+.sectiklerımız .fa-heart{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 1.5rem;
+    padding: 12px;
+    border-radius: 50%;
+    box-shadow: 2px 3px 5px gray;
+    color: var(--secondary-color);
+}
+
+.sectiklerımız .fa-heart:hover{
+   border: 1px solid var(--secondary-color);
+   cursor: pointer;
+}
+
+.sectiklerımız .row{
+    z-index: 1;
+    flex-wrap: nowrap;
+    overflow: hidden;
+}
+
+.ileri, .geri{
+    position: absolute;
+    bottom: 50%;
+    text-decoration: none;
+    font-size: 2rem;
+    border-radius: 50%;
+    padding: 1px 14px;
+    background-color: #FEF6EB;
+    color: var(--secondary-color);
+    cursor: pointer;
+}
+.ileri{
+    right: -5%;
+}
+
+.geri{
+    left: -5%;
+}
+
+.card .btn:hover{
+    background-color: var(--secondary-color);
+    color: white;
+}
+.banner{
+    width: 85%;
+}
+.banner img{
     cursor: pointer;
 }

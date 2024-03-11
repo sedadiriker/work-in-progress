@@ -1,48 +1,364 @@
 <!doctype html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
+    <title>E bebek</title>
+    <!-- favicon -->
     <link rel="shortcut icon" href="./images/favıcon.png" type="image/x-icon">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- boostrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- css -->
     <link rel="stylesheet" href="./css/style.css">
-  </head>
-  <body>
-    <header class="container py-2">
-        <section class="d-flex align-items-center gap-1 w-100">
-            <div class="logo border">
-                <img class="w-75" src="./images/logo.png" alt="">
-            </div>
+</head>
 
-            <div class="header__nav d-flex gap-3 w-75 border">
-                <div class="header__input w-75">
-                    <input type="text" placeholder="baby me Bebek Bezlerini Keşfedin!" class="w-100 rounded-5">
-                    <img src="./images/search-icon.png" alt="">
+<body>
+    <header class="container-fluid">
+        <div class="row">
+            <!-- header-slayt -->
+            <div class="header-slayt text-center text-white fw-bold container-fluid pt-2">
+                <p>Oioi Markalı Ürünlerde Sepette NET %50 İndirim!</p>
+                <p>Akülü Arabalarda NET %25 İndirim!</p>
+                <p>Tüm Kitaplarda 3 Al 2 Öde!</p>
+                <p>Nuk Markalı Ürünlerde NET %30 İndirim!</p>
+                <p>Eti Cicibebe Ürünlerinde NET %20 İndirim!</p>
+                <p>Motek ürünlerinde NET %40 İndirim!</p>
+                <p>Chicco beslenme gereçlerinde NET %25 indirim!</p>
+                <p>Emzirme Ürünlerinde NET %25 İndirim!</p>
+                <p>Babywhen Beşiklerde NET %30 İndirim</p>
+                <p>Buhar Makinelerinde sepette NET %15 İndirim </p>
+                <p>1100 TL ve Üzeri Alışverişlerde Kargo Bedava 📦</p>
+                <p>Yeni üyelere kargo bedava 😎</p>
+            </div>
+            <!-- header--part-1 -->
+            <section class="d-flex align-items-center justify-content-center gap-5 container text-center pt-4">
+                <div class="logo ">
+                    <img class="w-100" src="./images/logo.png" alt="">
                 </div>
 
-                <div class="header__nav__icon d-flex gap-2 w-50 align-items-center">
-                    <div class="heart-icon border border-1 h-100 d-flex justify-content-center align-items-center rounded-5">
-                        <i class="fa-regular fa-heart"></i>
+                <div class="header__nav d-flex gap-3 w-75">
+                    <div class="header__input w-75 mx-5">
+                        <input type="text" placeholder="baby me Bebek Bezlerini Keşfedin!" class="w-100 rounded-5">
+                        <img src="./images/search-icon.png" alt="">
                     </div>
 
-                    <div class="giris-icon border border-1 rounded-5 h-100 d-flex justify-content-center align-items-center gap-1">
-                        <i class="fa-regular fa-user fs-4"></i> Giriş Yap / Üye ol
+                    <div class="header__nav__icon d-flex gap-2 w-50 align-items-center">
+                        <div
+                            class="heart-icon border border-1 h-100 d-flex justify-content-center align-items-center rounded-5">
+                            <i class="fa-regular fa-heart"></i>
+                        </div>
+
+                        <div
+                            class="giris-icon border border-1 rounded-5 h-100 d-flex justify-content-center align-items-center gap-1">
+                            <i class="fa-regular fa-user fs-4"></i> Giriş Yap / Üye ol
+                        </div>
+
+                        <div class="sepet-icon  rounded-5 h-100 d-flex justify-content-center align-items-center gap-1">
+                            <i class="fa-solid fa-cart-shopping fs-4"></i> sepetim
+                        </div>
                     </div>
 
-                    <div class="sepet-icon  rounded-5 h-100 d-flex justify-content-center align-items-center gap-1">
-                        <i class="fa-solid fa-cart-shopping fs-4"></i> sepetim
-                    </div>
                 </div>
-    
-            </div>
-        </section>
+            </section>
+            <!-- header-part-2 -->
+            <section class="d-flex header-2">
+                <nav class="navbar navbar-expand-lg container ">
+                    <div class="container-fluid">
+                        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                            <ul class="navbar-nav">
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        Kategoriler
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Action</a></li>
+                                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        Keşfet
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Action</a></li>
+                                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        Hediye
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Action</a></li>
+                                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link primary-color" aria-current="page" href="#">İnternete Özel
+                                        Ürünler</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link secondary-color" href="#">Kampanyalar</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link secondary-color" href="#">Outlet</a>
+                                </li>
 
-        <section>
-            <div class="navbar"></div>
-        </section>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+
+                <div class="siparis-kontrol d-flex justify-content-center align-items-center">
+                    <p><i class="fa-solid fa-truck primary-color"></i> Siparişim nerede</p>
+                    <p><i class="fa-solid fa-location-dot primary-color"></i> En yakın ebebek</p>
+                </div>
+
+
+            </section>
+        </div>
+
     </header>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-  </body>
+
+    <main>
+        <div class="slideshow-container">
+            <div
+                class="slide_nav d-flex gap-5 justify-content-center align-items-center text-uppercase text-white py-2">
+                <p class="active">perşembeden pazara</p>
+                <p>Kampanyalar</p>
+                <p>tekstil</p>
+                <p>öne çıkanlar</p>
+                <p>bebek bezi</p>
+                <p>buldum buldum</p>
+            </div>
+            <div class="slide-section d-flex overflow-hidden m-auto gap-5">
+                <div class="slide rounded-5">
+                    <img src="./images/tum-rocs-flipper-urunleri-060324-d.webp" class="w-100 rounded-5">
+                </div>
+
+                <div class="slide rounded-5">
+                    <img src="./images/tum-akulu-arabalar-060324-d.webp" class="w-100 rounded-5">
+                </div>
+
+                <div class="slide rounded-5">
+                    <img src="./images/chicco-revize-d.webp" class="w-100 rounded-5">
+                </div>
+                <div class="slide rounded-5">
+                    <img src="./images/baby-plus-naturel-besikler-060324-d.webp" class="w-100 rounded-5">
+                </div>
+                <div class="slide rounded-5">
+                    <img src="./images/tum-babyturco-purewipes-060324-d.webp" class="w-100 rounded-5">
+                </div>
+                <div class="slide rounded-5">
+                    <img src="./images/tum-buhar-makineleri-060324-d.webp" class="w-100 rounded-5">
+                </div>
+                <div class="slide rounded-5">
+                    <img src="./images/tum-hamile-destek-yastiklarinda-060324-d.webp" class="w-100 rounded-5">
+                </div>
+                <div class="slide rounded-5">
+                    <img src="./images/tum-hiyjenik-ped-urunleri-060324-d.webp" class="w-100 rounded-5">
+                </div>
+                <div class="slide rounded-5">
+                    <img src="./images/tum-kuvet-ve-kuvet-setleri-060324-d.webp" class="w-100 rounded-5">
+                </div>
+                <div class="slide rounded-5">
+                    <img src="./images/tum-rocs-flipper-urunleri-060324-d.webp" class="w-100 rounded-5">
+                </div>
+            </div>
+
+
+            <div class="small-images d-flex gap-4">
+                <img width="150px" src="./images/chicco-revize-d.webp" alt="">
+                <img width="150px" src="./images/tum-akulu-arabalar-060324-d.webp" alt="">
+                <img width="150px" src="./images/baby-plus-naturel-besikler-060324-d.webp" alt="">
+                <img width="150px" src="./images/tum-babyturco-purewipes-060324-d.webp" alt="">
+                <img width="150px" src="./images/tum-buhar-makineleri-060324-d.webp" alt="">
+                <img width="150px" src="./images/tum-hamile-destek-yastiklarinda-060324-d.webp" alt="">
+                <img width="150px" src="./images/tum-hiyjenik-ped-urunleri-060324-d.webp" alt="">
+                <img width="150px" src="./images/tum-kuvet-ve-kuvet-setleri-060324-d.webp" alt="">
+                <img width="150px" src="./images/tum-rocs-flipper-urunleri-060324-d.webp" alt="">
+                <img width="150px" src="./images/tum-sabamed-urunleri-060424-d.webp" alt="">
+                <img width="150px" src="./images/tum-vtech-telsiz-kameralarda-sepette-20-indirim-060324-d.webp" alt="">
+
+            </div>
+            <a class="prev text-decoration-none">
+                <</a>
+                    <a class="next text-decoration-none">></a>
+        </div>
+
+        <div class="sectiklerımız mt-3 secondary-color m-auto">
+            <div class="title p-4 px-5 rounded-top-5 mb-4">
+                <h4 class="fs-3">Sizin için Seçtiklerimiz</h4>
+            </div>
+            <div class="container position-relative">
+                <div class="row gap-3 justify-content-center">
+                    <div class="card col-1 col-md-3 px-1" style="width: 275px;">
+                        <img src="./images/sevimli-ilk-arabam-bin-git_8695593793853_01.webp"
+                            class="card-img-top w-75 m-auto" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title fw-light"><span class="fw-bolder">Baby Toys -</span> Sevimli İlk
+                                Arabam Bin Git</h5>
+                            <p class="card-text fw-bold fs-5 my-4 mb-5"><img class="w-75 mb-3"
+                                    src="./images/Ekran Resmi 2024-03-11 14.15.57.png" alt=""><br>
+                                299,99 TL</p>
+                            <a href="#" class="btn w-100 rounded-5 fw-bold ">Sepete Ekle</a>
+                            <i class="fa-regular fa-heart"></i>
+                        </div>
+                    </div>
+                    <div class="card col-1 col-md-3 px-1" style="width: 275px;">
+                        <img src="./images/baby-plus-naturel-sepet-besi_8681270260794_01.webp"
+                            class="card-img-top w-75 m-auto" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title fw-light"><span class="fw-bolder">baby plus -</span> Naturel Sepet
+                                Bebek Beşik</h5>
+                            <p class="card-text fw-bold fs-5 my-4 mb-5"><img class="w-75 mb-3"
+                                    src="./images/Ekran Resmi 2024-03-11 14.45.36.png" alt=""><br>
+                                3.699,00 TL</p>
+                            <a href="#" class="btn w-100 rounded-5 fw-bold ">Sepete Ekle</a>
+                            <i class="fa-regular fa-heart"></i>
+                        </div>
+                    </div>
+                    <div class="card col-1 col-md-3 px-1" style="width: 275px;">
+                        <img src="./images/fisher-price-eglen-ve-ogren-ilk-bilgisayarim_194735067237_01.webp"
+                            class="card-img-top w-75 m-auto" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title fw-light"><span class="fw-bolder">Fisher Price -</span> Eğlen ve Öğren
+                                İlk Bilgisayarım</h5>
+                            <p class="card-text fw-bold fs-5 my-3 mb-5"><img class="w-75 mb-2"
+                                    src="./images/Ekran Resmi 2024-03-11 14.15.57.png" alt=""><br>
+                                899,99 TL</p>
+                            <a href="#" class="btn w-100 rounded-5 fw-bold ">Sepete Ekle</a>
+                            <i class="fa-regular fa-heart"></i>
+                        </div>
+                    </div>
+                    <div class="card col-1 col-md-3 px-1" style="width: 275px;">
+                        <img src="./images/lansinoh40-ml-lanolin-anne-gogus-ucu-krem_5060062996166_01.webp"
+                            class="card-img-top w-75 m-auto" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title fw-light"><span class="fw-bolder">Lansinoh -</span> Lanolin Anne Göğüs
+                                Ucu Kremi 40 ml</h5>
+                            <p class="card-text fw-bold fs-5 my-4 mb-5 green"><img class="w-75"
+                                    src="./images/Ekran Resmi 2024-03-11 14.39.51.png" alt=""><br>
+                                299,99 TL</p>
+                            <a href="#" class="btn w-100 rounded-5 fw-bold ">Sepete Ekle</a>
+                            <i class="fa-regular fa-heart"></i>
+                        </div>
+                    </div>        
+                    <div class="card col-1 col-md-3 px-1" style="width: 275px;">
+                        <img src="./images/ahsap-cocuk-oyun-evi_1990000070203_01.webp" class="card-img-top w-75 m-auto"
+                            alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title fw-light"><span class="fw-bolder">Minera -</span> Ahşap Çocuk Oyun Evi
+                            </h5>
+                            <p class="card-text fw-bold fs-5 my-4 mb-5"><img class="w-75 mb-3"
+                                    src="./images/Ekran Resmi 2024-03-11 14.45.36.png" alt=""><br>
+                                2.399,00 TL</p>
+                            <a href="#" class="btn w-100 rounded-5 fw-bold ">Sepete Ekle</a>
+                            <i class="fa-regular fa-heart"></i>
+                        </div>
+                    </div>
+                    <div class="card col-1 col-md-3 px-1" style="width: 275px;">
+                        <img src="./images/c_8684510177005_01.webp" class="card-img-top w-75 m-auto" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title fw-light"><span class="fw-bolder">Baby Toys -</span> Naturel Sepet
+                                Bebek Beşik</h5>
+                            <p class="card-text fw-bold fs-5 my-4 mb-5"><img class="w-75 mb-3"
+                                    src="./images/Ekran Resmi 2024-03-11 14.45.36.png" alt=""><br>
+                                999,00 TL</p>
+                            <a href="#" class="btn w-100 rounded-5 fw-bold ">Sepete Ekle</a>
+                            <i class="fa-regular fa-heart"></i>
+                        </div>
+                    </div>
+                    <div class="card col-1 col-md-3 px-1" style="width: 275px;">
+                        <img src="./images/baby-plus-naturel-sepet-besi_8681270260794_01.webp"
+                            class="card-img-top w-75 m-auto" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title fw-light"><span class="fw-bolder">baby plus -</span> Naturel Sepet
+                                Bebek Beşik</h5>
+                            <p class="card-text fw-bold fs-5 my-4 mb-5"><img class="w-75 mb-3"
+                                    src="./images/Ekran Resmi 2024-03-11 14.45.36.png" alt=""><br>
+                                3.699,00 TL</p>
+                            <a href="#" class="btn w-100 rounded-5 fw-bold ">Sepete Ekle</a>
+                            <i class="fa-regular fa-heart"></i>
+                        </div>
+                    </div>
+                    <div class="card col-1 col-md-3 px-1" style="width: 275px;">
+                        <img src="./images/sevimli-ilk-arabam-bin-git_8695593793853_01.webp"
+                            class="card-img-top w-75 m-auto" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title fw-light"><span class="fw-bolder">Baby Toys -</span> Sevimli İlk
+                                Arabam Bin Git</h5>
+                            <p class="card-text fw-bold fs-5 my-4 mb-5"><img class="w-75 mb-3"
+                                    src="./images/Ekran Resmi 2024-03-11 14.15.57.png" alt=""><br>
+                                299,99 TL</p>
+                            <a href="#" class="btn w-100 rounded-5 fw-bold ">Sepete Ekle</a>
+                            <i class="fa-regular fa-heart"></i>
+                        </div>
+                    </div>
+                    <div class="card col-1 col-md-3 px-1" style="width: 275px;">
+                        <img src="./images/lansinoh40-ml-lanolin-anne-gogus-ucu-krem_5060062996166_01.webp"
+                            class="card-img-top w-75 m-auto" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title fw-light"><span class="fw-bolder">Lansinoh -</span> Lanolin Anne Göğüs
+                                Ucu Kremi 40 ml</h5>
+                            <p class="card-text fw-bold fs-5 my-4 mb-5 green"><img class="w-75"
+                                    src="./images/Ekran Resmi 2024-03-11 14.39.51.png" alt=""><br>
+                                299,99 TL</p>
+                            <a href="#" class="btn w-100 rounded-5 fw-bold ">Sepete Ekle</a>
+                            <i class="fa-regular fa-heart"></i>
+                        </div>
+                    </div>
+                    <div class="card col-1 col-md-3 px-1" style="width: 275px;">
+                        <img src="./images/baby-plus-naturel-sepet-besi_8681270260794_01.webp"
+                            class="card-img-top w-75 m-auto" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title fw-light"><span class="fw-bolder">baby plus -</span> Naturel Sepet
+                                Bebek Beşik</h5>
+                            <p class="card-text fw-bold fs-5 my-4 mb-5"><img class="w-75 mb-3"
+                                    src="./images/Ekran Resmi 2024-03-11 14.45.36.png" alt=""><br>
+                                3.699,00 TL</p>
+                            <a href="#" class="btn w-100 rounded-5 fw-bold ">Sepete Ekle</a>
+                            <i class="fa-regular fa-heart"></i>
+                        </div>
+                    </div>
+                    
+                </div>
+
+                <a class="ileri">></a>
+                <a class="geri"><</a>
+                
+            </div>
+
+        </div>
+
+        <div class="banner container my-4">
+            <img class="w-100" src="./images/Ekran Resmi 2024-03-11 15.33.52.png" alt="">
+        </div>
+
+        <div class="super_fıyat m-auto secondary-color">
+            <div class="title p-4 px-5 rounded-top-5 mb-4">
+                <h4 class="fs-3">Süper Fiyat</h4>
+            </div>
+        </div>
+    
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <script src="./script.js"></script>
+</body>
+
 </html>
